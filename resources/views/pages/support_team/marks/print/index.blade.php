@@ -7,20 +7,20 @@
 <div class="container">
     <div id="print" xmlns:margin-top="http://www.w3.org/1999/xhtml">
         {{--    Logo N School Details--}}
-        <table width="100%">
+        <table width="100%" style="border-color: #0B0B45 !important;">
             <tr>
-                <td><img src="{{ $s['logo'] }}" style="max-height : 100px;"></td>
+                <td><img src="{{asset('/global_assets/images/user.png')}}" style="max-height : 100px;"></td>
 
                 <td style="text-align: center; ">
-                    <strong><span style="color: #1b0c80; font-size: 25px;">{{ strtoupper(Qs::getSetting('system_name')) }}</span></strong><br/>
-                   {{-- <strong><span style="color: #1b0c80; font-size: 20px;">MINNA, NIGER STATE</span></strong><br/>--}}
+                    <strong><span style="color: green; font-size: 25px;">{{ strtoupper(Qs::getSetting('system_name')) }}</span></strong><br/>
+                   {{-- <strong><span style="color: #0B0B45; font-size: 20px;">MINNA, NIGER STATE</span></strong><br/>--}}
                     <strong><span
-                                style="color: #000; font-size: 15px;"><i>{{ ucwords($s['address']) }}</i></span></strong><br/>
-                    <strong><span style="color: #000; font-size: 15px;"> REPORT SHEET {{ '('.strtoupper($class_type->name).')' }}
+                                style="color: #0B0B45; font-size: 15px;"><i>{{ ucwords($s['address']) }}</i></span></strong><br/>
+                    <strong><span style="color: #0B0B45; font-size: 15px;"> REPORT SHEET {{ '('.strtoupper($class_type->name).')' }}
                     </span></strong>
                 </td>
                 <td style="width: 100px; height: 100px; float: left;">
-                    <img src="{{ $sr->user->photo }}"
+                    <img src="{{asset('/global_assets/images/student.jpeg')}}"
                          alt="..."  width="100" height="100">
                 </td>
             </tr>

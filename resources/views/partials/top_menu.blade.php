@@ -1,12 +1,12 @@
-<div class="navbar navbar-expand-md navbar-dark">
+<div class="navbar navbar-expand-md bg-success">
     <div class="mt-2 mr-5">
         <a href="{{ route('dashboard') }}" class="d-inline-block">
-        <h4 class="text-bold text-white">{{ Qs::getSystemName() }}</h4>
+        <h4 class="text-bold text-white">Green University</h4>
         </a>
     </div>
   {{--  <div class="navbar-brand">
         <a href="index.html" class="d-inline-block">
-            <img src="{{ asset('global_assets/images/logo_light.png') }}" alt="">
+            
         </a>
     </div>--}}
 
@@ -14,7 +14,7 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-mobile">
             <i class="icon-tree5"></i>
         </button>
-        <button class="navbar-toggler sidebar-mobile-main-toggle" type="button">
+        <button class="navbar-toggler sidebar-mobile-main-toggle btn btn-outline-light" type="button">
             <i class="icon-paragraph-justify3"></i>
         </button>
     </div>
@@ -22,7 +22,7 @@
     <div class="collapse navbar-collapse" id="navbar-mobile">
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a href="#" class="navbar-nav-link sidebar-control sidebar-main-toggle d-none d-md-block">
+                <a href="#" class="text-light nav-link sidebar-control sidebar-main-toggle d-none d-md-block">
                     <i class="icon-paragraph-justify3"></i>
                 </a>
             </li>
@@ -35,9 +35,8 @@
         <ul class="navbar-nav">
 
             <li class="nav-item dropdown dropdown-user">
-                <a href="#" class="navbar-nav-link dropdown-toggle" data-toggle="dropdown">
-                    <img style="width: 38px; height:38px;" src="{{ Auth::user()->photo }}" class="rounded-circle" alt="photo">
-                    <span>{{ Auth::user()->name }}</span>
+                <a href="#" class="text-light nav-link dropdown-toggle" data-toggle="dropdown">
+                                       <span>{{ Auth::user()->name }}</span>
                 </a>
 
                 <div class="dropdown-menu dropdown-menu-right">

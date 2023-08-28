@@ -25,30 +25,30 @@ class UsersTableSeeder extends Seeder
 
     protected function createNewUsers()
     {
-        $password = Hash::make('cj'); // Default user password
+        $password = Hash::make('123'); // Default user password
 
         $d = [
 
-            ['name' => 'CJ Inspired',
-                'email' => 'cj@cj.com',
-                'username' => 'cj',
+            ['name' => 'Super_Admin',
+                'email' => 'super@admin.com',
+                'username' => 'super_admin',
                 'password' => $password,
                 'user_type' => 'super_admin',
                 'code' => strtoupper(Str::random(10)),
                 'remember_token' => Str::random(10),
             ],
 
-            ['name' => 'Admin KORA',
-            'email' => 'admin@admin.com',
+            ['name' => 'Faculty',
+            'email' => 'faculty@gmail.com',
             'password' => $password,
             'user_type' => 'admin',
-            'username' => 'admin',
+            'username' => 'faculty',
             'code' => strtoupper(Str::random(10)),
             'remember_token' => Str::random(10),
             ],
 
-            ['name' => 'Teacher Chike',
-                'email' => 'teacher@teacher.com',
+            ['name' => 'Co-Ordinator',
+                'email' => 'co@ordinator.com',
                 'user_type' => 'teacher',
                 'username' => 'teacher',
                 'password' => $password,
@@ -56,23 +56,23 @@ class UsersTableSeeder extends Seeder
                 'remember_token' => Str::random(10),
             ],
 
-            ['name' => 'Parent Kaba',
-                'email' => 'parent@parent.com',
-                'user_type' => 'parent',
-                'username' => 'parent',
-                'password' => $password,
-                'code' => strtoupper(Str::random(10)),
-                'remember_token' => Str::random(10),
-            ],
-
-            ['name' => 'Accountant Jeff',
-                'email' => 'accountant@accountant.com',
+            ['name' => 'COI',
+                'email' => 'coi@gmail.com',
                 'user_type' => 'accountant',
                 'username' => 'accountant',
                 'password' => $password,
                 'code' => strtoupper(Str::random(10)),
                 'remember_token' => Str::random(10),
             ],
+
+            // ['name' => 'Faculty',
+            //     'email' => 'faculty@gmail.com',
+            //     'user_type' => 'accountant',
+            //     'username' => 'accountant',
+            //     'password' => $password,
+            //     'code' => strtoupper(Str::random(10)),
+            //     'remember_token' => Str::random(10),
+            // ],
         ];
         DB::table('users')->insert($d);
     }
@@ -90,7 +90,7 @@ class UsersTableSeeder extends Seeder
                     'email' => $user_type[$k].$i.'@'.$user_type[$k].'.com',
                     'user_type' => $user_type[$k],
                     'username' => $user_type[$k].$i,
-                    'password' => Hash::make($user_type[$k]),
+                    'password' => Hash::make('123'),
                     'code' => strtoupper(Str::random(10)),
                     'remember_token' => Str::random(10),
                 ];

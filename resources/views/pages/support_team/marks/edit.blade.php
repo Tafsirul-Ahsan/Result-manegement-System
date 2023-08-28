@@ -1,6 +1,6 @@
 <form class="ajax-update" action="{{ route('marks.update', [$exam_id, $my_class_id, $section_id, $subject_id]) }}" method="post">
     @csrf @method('put')
-    <table class="table table-striped">
+    <table class="table table-striped datatable-button-html5-columns">
         <thead>
         <tr>
             <th>S/N</th>
@@ -19,9 +19,9 @@
                 <td>{{ $mk->user->student_record->adm_no }}</td>
 
 {{--                CA AND EXAMS --}}
-                <td><input title="1ST CA" min="1" max="20" class="text-center" name="t1_{{ $mk->id }}" value="{{ $mk->t1 }}" type="number"></td>
-                <td><input title="2ND CA" min="1" max="20" class="text-center" name="t2_{{ $mk->id }}" value="{{ $mk->t2 }}" type="number"></td>
-                <td><input title="EXAM" min="1" max="60" class="text-center" name="exm_{{ $mk->id }}" value="{{ $mk->exm }}" type="number"></td>
+                <td><input title="1ST CA" min="1" max="20" class="text-center" name="t1_{{ $mk->id }}" value="{{ $mk->t1 }}" type="number">{{ $mk->t1 }}</td>
+                <td><input title="2ND CA" min="1" max="20" class="text-center" name="t2_{{ $mk->id }}" value="{{ $mk->t2 }}" type="number">{{ $mk->t2 }}</td>
+                <td><input title="EXAM" min="1" max="60" class="text-center" name="exm_{{ $mk->id }}" value="{{ $mk->exm }}" type="number">{{ $mk->exm }}</td>
 
             </tr>
         @endforeach

@@ -1,5 +1,5 @@
 @extends('layouts.master')
-@section('page_title', 'Manage Marks')
+@section('page_title', 'Green University Student MarkSheet')
 @section('content')
 
     <div class="card">
