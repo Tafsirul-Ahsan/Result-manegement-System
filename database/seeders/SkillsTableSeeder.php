@@ -25,20 +25,14 @@ class SkillsTableSeeder extends Seeder
         $types = ['AF', 'PS']; // Affective & Psychomotor Traits/Skills
         $d = [
 
-            [ 'name' => 'PUNCTUALITY', 'skill_type' => $types[0] ],
-            [ 'name' => 'NEATNESS', 'skill_type' => $types[0] ],
-            [ 'name' => 'HONESTY', 'skill_type' => $types[0] ],
-            [ 'name' => 'RELIABILITY', 'skill_type' => $types[0] ],
-            [ 'name' => 'RELATIONSHIP WITH OTHERS', 'skill_type' => $types[0] ],
-            [ 'name' => 'POLITENESS', 'skill_type' => $types[0] ],
-            [ 'name' => 'ALERTNESS', 'skill_type' => $types[0] ],
-            [ 'name' => 'HANDWRITING', 'skill_type' => $types[1] ],
-            [ 'name' => 'GAMES & SPORTS', 'skill_type' => $types[1] ],
-            [ 'name' => 'DRAWING & ARTS', 'skill_type' => $types[1] ],
-            [ 'name' => 'PAINTING', 'skill_type' => $types[1] ],
-            [ 'name' => 'CONSTRUCTION', 'skill_type' => $types[1] ],
-            [ 'name' => 'MUSICAL SKILLS', 'skill_type' => $types[1] ],
-            [ 'name' => 'FLEXIBILITY', 'skill_type' => $types[1] ],
+            [ 'name' => 'CO1', 'skill_type' => $types[0] ],
+            [ 'name' => 'CO2', 'skill_type' => $types[0] ],
+            [ 'name' => 'CO3', 'skill_type' => $types[0] ],
+            [ 'name' => 'CO4', 'skill_type' => $types[0] ],
+            [ 'name' => 'CO5', 'skill_type' => $types[1] ],
+            [ 'name' => 'CO6', 'skill_type' => $types[1] ],
+            [ 'name' => 'CO7', 'skill_type' => $types[1] ],
+            [ 'name' => 'CO8', 'skill_type' => $types[1] ],
 
         ];
         DB::table('skills')->insert($d);

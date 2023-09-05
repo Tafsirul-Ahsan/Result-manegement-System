@@ -4,14 +4,14 @@
 
     <div class="card">
         <div class="card-header header-elements-inline">
-            <h6 class="card-title">Manage Classes</h6>
+            <h6 class="card-title">Manage Department</h6>
             {!! Qs::getPanelOptions() !!}
         </div>
 
         <div class="card-body">
             <ul class="nav nav-tabs nav-tabs-highlight">
-                <li class="nav-item"><a href="#all-classes" class="nav-link active" data-toggle="tab">Manage Classes</a></li>
-                <li class="nav-item"><a href="#new-class" class="nav-link" data-toggle="tab"><i class="icon-plus2"></i> Create New Class</a></li>
+                <li class="nav-item"><a href="#all-classes" class="nav-link active" data-toggle="tab">Manage Department</a></li>
+                <li class="nav-item"><a href="#new-class" class="nav-link" data-toggle="tab"><i class="icon-plus2"></i> Create New Department</a></li>
             </ul>
 
             <div class="tab-content">
@@ -21,7 +21,7 @@
                             <tr>
                                 <th>S/N</th>
                                 <th>Name</th>
-                                <th>Class Type</th>
+                                <th>Department Type</th>
                                 <th>Action</th>
                             </tr>
                             </thead>

@@ -18,7 +18,7 @@
 
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label for="my_class_id" class="col-form-label font-weight-bold">Class:</label>
+                                <label for="my_class_id" class="col-form-label font-weight-bold">Department:</label>
                                 <select required onchange="getClassSubjects(this.value)" id="my_class_id" name="my_class_id" class="form-control select">
                                     <option value="">Select Class</option>
                                     @foreach($my_classes as $c)

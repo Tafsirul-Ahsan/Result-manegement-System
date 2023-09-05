@@ -14,9 +14,9 @@
             <div class="row">
                 <div class="col-md-6 border-right-2 border-right-blue-400">
                         <div class="form-group row">
-                            <label class="col-lg-3 col-form-label font-weight-semibold">Name of School <span class="text-danger">*</span></label>
+                            <label class="col-lg-3 col-form-label font-weight-semibold">Name of University <span class="text-danger">*</span></label>
                             <div class="col-lg-9">
-                                <input name="system_name" value="{{ $s['system_name'] }}" required type="text" class="form-control" placeholder="Name of School">
+                                <input name="system_name" value="{{ $s['system_name'] }}" required type="text" class="form-control" placeholder="Name of University">
                             </div>
                         </div>
                         <div class="form-group row">
@@ -31,9 +31,9 @@
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label class="col-lg-3 col-form-label font-weight-semibold">School Acronym</label>
+                            <label class="col-lg-3 col-form-label font-weight-semibold">University Acronym</label>
                             <div class="col-lg-9">
-                                <input name="system_title" value="{{ $s['system_title'] }}" type="text" class="form-control" placeholder="School Acronym">
+                                <input name="system_title" value="{{ $s['system_title'] }}" type="text" class="form-control" placeholder="University Acronym">
                             </div>
                         </div>
                         <div class="form-group row">
@@ -43,15 +43,15 @@
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label class="col-lg-3 col-form-label font-weight-semibold">School Email</label>
+                            <label class="col-lg-3 col-form-label font-weight-semibold">University Email</label>
                             <div class="col-lg-9">
-                                <input name="system_email" value="{{ $s['system_email'] }}" type="email" class="form-control" placeholder="School Email">
+                                <input name="system_email" value="{{ $s['system_email'] }}" type="email" class="form-control" placeholder="University Email">
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label class="col-lg-3 col-form-label font-weight-semibold">School Address <span class="text-danger">*</span></label>
+                            <label class="col-lg-3 col-form-label font-weight-semibold">University Address <span class="text-danger">*</span></label>
                             <div class="col-lg-9">
-                                <input required name="address" value="{{ $s['address'] }}" type="text" class="form-control" placeholder="School Address">
+                                <input required name="address" value="{{ $s['address'] }}" type="text" class="form-control" placeholder="University Address">
                             </div>
                         </div>
                         <div class="form-group row">

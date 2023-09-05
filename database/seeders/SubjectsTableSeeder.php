@@ -23,8 +23,8 @@ class SubjectsTableSeeder extends Seeder
 
     protected function createSubjects()
     {
-        $subjects = ['English', 'Mathematics', 'CSE', 'EEE', 'ETC', 'SWE', 'TXT', 'PHRM','GE'];
-        $sub_slug = ['Eng', 'Math', 'CSE', 'EEE', 'ETC', 'SWE', 'TXT', 'PHRM','GE'];
+        $subjects = ['Theory','Lab','Web Programming'];
+        $sub_slug = ['Theory','Lab','Web Programming'];
         $teacher_id = User::where(['user_type' => 'teacher'])->first()->id;
         $my_classes = MyClass::all();
 
@@ -52,45 +52,7 @@ class SubjectsTableSeeder extends Seeder
                     'teacher_id' => $teacher_id
                 ],
 
-                [
-                    'name' => $subjects[3],
-                    'slug' => $sub_slug[3],
-                    'my_class_id' => $my_class->id,
-                    'teacher_id' => $teacher_id
-                ],
-                [
-                    'name' => $subjects[4],
-                    'slug' => $sub_slug[4],
-                    'my_class_id' => $my_class->id,
-                    'teacher_id' => $teacher_id
-                ],
-
-                [
-                    'name' => $subjects[5],
-                    'slug' => $sub_slug[5],
-                    'my_class_id' => $my_class->id,
-                    'teacher_id' => $teacher_id
-                ],
-                [
-                    'name' => $subjects[6],
-                    'slug' => $sub_slug[6],
-                    'my_class_id' => $my_class->id,
-                    'teacher_id' => $teacher_id
-                ],
-
-                [
-                    'name' => $subjects[7],
-                    'slug' => $sub_slug[7],
-                    'my_class_id' => $my_class->id,
-                    'teacher_id' => $teacher_id
-                ],
-                [
-                    'name' => $subjects[8],
-                    'slug' => $sub_slug[8],
-                    'my_class_id' => $my_class->id,
-                    'teacher_id' => $teacher_id
-                ],
-
+               
             ];
 
             DB::table('subjects')->insert($data);

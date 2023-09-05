@@ -2,13 +2,18 @@
     @csrf @method('put')
     <table class="table table-striped datatable-button-html5-columns">
         <thead>
+        <tr class="card-header">
+                <th class="col-md-4"><h6 class="card-title"><strong>Subject: </strong> {{ $m->subject->name }}</h6></th>
+                <th class="col-md-4"><h6 class="card-title"><strong>Class: </strong> {{ $m->my_class->name.' '.$m->section->name }}</h6></th>
+                <th class="col-md-4"><h6 class="card-title"><strong>Exam: </strong> {{ $m->exam->name.' - '.$m->year }}</h6></th>
+</tr>
         <tr>
             <th>S/N</th>
             <th>Name</th>
             <th>ADM_NO</th>
-            <th>1ST CA (20)</th>
-            <th>2ND CA (20)</th>
-            <th>EXAM (60)</th>
+            <th>Mid Term</th>
+            <th>Final</th>
+            <th>Total</th>
         </tr>
         </thead>
         <tbody>
